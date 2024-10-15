@@ -7,9 +7,9 @@
 ###################################=> common commands <=#############################################
 # ========================== Capture Environment ===============================
 # get the repo root and output path
-ROOT_PACKAGE=github.com/openimsdk/tools
+ROOT_PACKAGE=github.com/zsjinwei/openim-tools
 OUT_DIR=$(REPO_ROOT)/_output
-VERSION_PACKAGE=github.com/openimsdk/tools/version
+VERSION_PACKAGE=github.com/zsjinwei/openim-tools/version
 # ==============================================================================
 
 
@@ -135,8 +135,8 @@ lint: tools.verify.golangci-lint
 
 ## test: Run unit test
 .PHONY: test
-test: 
-	@$(GO) test ./... 
+test:
+	@$(GO) test ./...
 
 ## cover: Run unit tests with coverage and enforce a minimum coverage requirement.
 .PHONY: cover
@@ -176,11 +176,11 @@ copyright-add: tools.verify.addlicense
 help: Makefile
 	@printf "\n\033[1mUsage: make <TARGETS> ...\033[0m\n\n\\033[1mTargets:\\033[0m\n\n"
 	@sed -n 's/^##//p' $< | awk -F':' '{printf "\033[36m%-28s\033[0m %s\n", $$1, $$2}' | sed -e 's/^/ /'
-	
+
 ######################################=> common tools<= ############################################
 # tools
 
-BUILD_TOOLS ?= go-gitlint golangci-lint goimports addlicense deepcopy-gen conversion-gen ginkgo go-junit-report 
+BUILD_TOOLS ?= go-gitlint golangci-lint goimports addlicense deepcopy-gen conversion-gen ginkgo go-junit-report
 
 ## tools.verify.%: Check if a tool is installed and install it
 .PHONY: tools.verify.%

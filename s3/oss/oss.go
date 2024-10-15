@@ -30,10 +30,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/openimsdk/tools/s3"
+	"github.com/zsjinwei/openim-tools/s3"
 
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
-	"github.com/openimsdk/tools/errs"
+	"github.com/zsjinwei/openim-tools/errs"
 )
 
 const (

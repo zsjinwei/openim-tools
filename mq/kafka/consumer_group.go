@@ -19,7 +19,7 @@ import (
 	"errors"
 
 	"github.com/IBM/sarama"
-	"github.com/openimsdk/tools/log"
+	"github.com/zsjinwei/openim-tools/log"
 )
 
 type MConsumerGroup struct {

@@ -1,4 +1,4 @@
-module github.com/openimsdk/tools
+module github.com/zsjinwei/openim-tools
 
 go 1.21
 
@@ -32,7 +32,6 @@ require (
 	github.com/jinzhu/copier v0.4.0
 	github.com/magefile/mage v1.15.0
 	github.com/minio/minio-go/v7 v7.0.69
-	github.com/openimsdk/protocol v0.0.69-alpha.4
 	github.com/pkg/errors v0.9.1
 	github.com/qiniu/go-sdk/v7 v7.18.2
 	github.com/redis/go-redis/v9 v9.2.1
@@ -76,6 +75,7 @@ require (
 require (
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
 	github.com/lestrrat-go/strftime v1.0.6
+	github.com/zsjinwei/openim-protocol v0.0.72-beta.1
 )
 
 require (
